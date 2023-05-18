@@ -6,6 +6,7 @@ import Home from "@/views/Home";
 import Dashboard from "@/views/dashboard/Dashboard";
 import WriteBlog from "@/views/blog/blog/WriteBlog";
 import BlogList from "@/views/blog/blog/BlogList";
+import SiteSetting from "@/views/page/SiteSetting";
 import CommentList from "@/views/blog/comment/CommentList";
 import CategoryList from "@/views/blog/category/CategoryList";
 import TagList from "@/views/blog/tag/TagList";
@@ -95,6 +96,13 @@ const routes = [
 					title: '访客统计'
 				}
 			},
+            {
+                path: '/siteSettings',
+                component: SiteSetting,
+                meta: {
+                    title: '站点管理'
+                }
+            },
 		]
 	}
 ]

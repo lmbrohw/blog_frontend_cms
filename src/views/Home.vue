@@ -87,6 +87,17 @@
 							}
 						]
 					},
+                    {
+                        id: 2,
+                        title: '页面管理',
+                        children: [
+                            {
+                                id: 21,
+                                title: '站点设置',
+                                path: '/siteSettings'
+                            },
+                        ]
+                    },
 				],
 				iconsObj: {
 					'1': 'el-icon-menu',
