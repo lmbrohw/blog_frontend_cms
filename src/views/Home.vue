@@ -71,6 +71,16 @@
 								path: '/blogs'
 							},
 							{
+								id: 15,
+								title: '分类管理',
+								path: '/categories'
+							},
+							{
+								id: 16,
+								title: '标签管理',
+								path: '/tags'
+							},
+							{
 								id: 17,
 								title: '评论管理',
 								path: '/comments'

@@ -7,6 +7,8 @@ import Dashboard from "@/views/dashboard/Dashboard";
 import WriteBlog from "@/views/blog/blog/WriteBlog";
 import BlogList from "@/views/blog/blog/BlogList";
 import CommentList from "@/views/blog/comment/CommentList";
+import CategoryList from "@/views/blog/category/CategoryList";
+import TagList from "@/views/blog/tag/TagList";
 import Visitor from "@/views/statistics/Visitor";
 import Register from "@/views/Register";
 import {SAVE_NAV_STATE} from "@/store/mutations-types";
@@ -63,6 +65,20 @@ const routes = [
 				component: BlogList,
 				meta: {
 					title: '文章管理'
+				}
+			},
+			{
+				path: '/categories',
+				component: CategoryList,
+				meta: {
+					title: '分类管理'
+				}
+			},
+			{
+				path: '/tags',
+				component: TagList,
+				meta: {
+					title: '标签管理'
 				}
 			},
 			{
