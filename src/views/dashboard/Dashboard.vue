@@ -38,16 +38,16 @@
           <div ref="tagEcharts" style="height:500px;"></div>
         </el-card>
       </el-col>
-<!--      <el-col :span="8">-->
-<!--        <el-card>-->
-<!--          <div ref="mapEcharts" style="height:500px;"></div>-->
-<!--        </el-card>-->
-<!--      </el-col>-->
+      <el-col :span="8" style="display: none;">
+        <el-card>
+          <div ref="mapEcharts" style="height:500px;"></div>
+        </el-card>
+      </el-col>
     </el-row>
 
-<!--    <el-card class="panel-group">-->
-<!--      <div ref="visitRecordEcharts" style="height:500px; width: 100%"></div>-->
-<!--    </el-card>-->
+    <el-card class="panel-group" style="display: none;">
+      <div ref="visitRecordEcharts" style="height:500px; width: 100%"></div>
+    </el-card>
   </div>
 </template>
 
