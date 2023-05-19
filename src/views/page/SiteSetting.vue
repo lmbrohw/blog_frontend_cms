@@ -42,6 +42,7 @@
             </el-col>
         </el-row>
 
+
         <div style="text-align: right;margin-top: 30px">
             <el-button type="primary" icon="el-icon-check" @click="submit">保存</el-button>
         </div>
