@@ -13,6 +13,8 @@ import TagList from "@/views/blog/tag/TagList";
 import Visitor from "@/views/statistics/Visitor";
 import Register from "@/views/Register";
 import {SAVE_NAV_STATE} from "@/store/mutations-types";
+import MomentList from "@/views/blog/moment/MomentList.vue";
+import WriteMoment from "@/views/blog/moment/WriteMoment.vue";
 
 Vue.use(VueRouter)
 
@@ -62,10 +64,31 @@ const routes = [
 				}
 			},
 			{
+				path: '/moments/write',
+				component: WriteMoment,
+				meta: {
+					title: '写动态'
+				}
+			},
+			{
+				path: '/moments/edit/:id',
+				component: WriteMoment,
+				meta: {
+					title: '编辑动态'
+				}
+			},
+			{
 				path: '/blogs',
 				component: BlogList,
 				meta: {
 					title: '文章管理'
+				}
+			},
+			{
+				path: '/moments',
+				component: MomentList,
+				meta: {
+					title: '动态管理'
 				}
 			},
 			{

@@ -70,6 +70,11 @@
 								title: '文章管理',
 								path: '/blogs'
 							},
+              {
+                id: 14,
+                title: '动态管理',
+                path: '/moments'
+              },
 							{
 								id: 15,
 								title: '分类管理',
