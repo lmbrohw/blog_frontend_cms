@@ -70,11 +70,11 @@
 								title: '文章管理',
 								path: '/blogs'
 							},
-              {
-                id: 14,
-                title: '动态管理',
-                path: '/moments'
-              },
+							{
+								id: 14,
+								title: '动态管理',
+								path: '/moments'
+							},
 							{
 								id: 15,
 								title: '分类管理',
@@ -103,6 +103,37 @@
                             },
                         ]
                     },
+					{
+						id: 4,
+						title: '日志管理',
+						children: [
+							{
+								id: 41,
+								title: '任务日志',
+								path: '/jobs/logs'
+							},
+							{
+								id: 42,
+								title: '登录日志',
+								path: '/loginLog'
+							},
+							{
+								id: 43,
+								title: '操作日志',
+								path: '/operationLog'
+							},
+							{
+								id: 44,
+								title: '异常日志',
+								path: '/exceptionLog'
+							},
+							{
+								id: 45,
+								title: '访问日志',
+								path: '/visitLog'
+							}
+						]
+					},
 				],
 				iconsObj: {
 					'1': 'el-icon-menu',

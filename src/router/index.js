@@ -15,6 +15,11 @@ import Register from "@/views/Register";
 import {SAVE_NAV_STATE} from "@/store/mutations-types";
 import MomentList from "@/views/blog/moment/MomentList.vue";
 import WriteMoment from "@/views/blog/moment/WriteMoment.vue";
+import JobLog from "@/views/log/ScheduleJobLog";
+import OperationLog from "@/views/log/OperationLog";
+import LoginLog from "@/views/log/LoginLog";
+import ExceptionLog from "@/views/log/ExceptionLog";
+import VisitLog from "@/views/log/VisitLog";
 
 Vue.use(VueRouter)
 
@@ -126,6 +131,41 @@ const routes = [
                     title: '站点管理'
                 }
             },
+			{
+				path: '/jobs/logs',
+				component: JobLog,
+				meta: {
+					title: '任务日志'
+				}
+			},
+			{
+				path: '/operationLog',
+				component: OperationLog,
+				meta: {
+					title: '操作日志'
+				}
+			},
+			{
+				path: '/loginLog',
+				component: LoginLog,
+				meta: {
+					title: '登录日志'
+				}
+			},
+			{
+				path: '/exceptionLog',
+				component: ExceptionLog,
+				meta: {
+					title: '异常日志'
+				}
+			},
+			{
+				path: '/visitLog',
+				component: VisitLog,
+				meta: {
+					title: '访问日志'
+				}
+			},
 		]
 	}
 ]
