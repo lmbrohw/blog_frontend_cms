@@ -15,7 +15,6 @@ import Visitor from "@/views/statistics/Visitor";
 import Register from "@/views/Register";
 import {SAVE_NAV_STATE} from "@/store/mutations-types";
 import MomentList from "@/views/blog/moment/MomentList.vue";
-import WriteMoment from "@/views/blog/moment/WriteMoment.vue";
 import JobLog from "@/views/log/ScheduleJobLog";
 import OperationLog from "@/views/log/OperationLog";
 import LoginLog from "@/views/log/LoginLog";
@@ -77,8 +76,6 @@ const routes = [
 				}
 			},
 			{
-<<<<<<< HEAD
-=======
 				path: '/moments/edit/:id',
 				component: WriteMoment,
 				meta: {
@@ -86,7 +83,6 @@ const routes = [
 				}
 			},
 			{
->>>>>>> 0ad638ffd0fef0b1ccd287e35628ac8b2399dc82
 				path: '/blogs',
 				component: BlogList,
 				meta: {

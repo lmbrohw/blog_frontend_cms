@@ -1,15 +1,5 @@
 import axios from '@/plugins/axios'
 
-<<<<<<< HEAD
-export function getMomentById(id) {
-	return axios({
-		url: 'moment',
-		method: 'GET',
-		params: {
-			id
-		}
-	})
-}
 
 
 export function saveMoment(moment) {
@@ -30,7 +20,7 @@ export function updateMoment(moment) {
 			...moment
 		}
 	})
-=======
+}
 export function getMomentListByQuery(queryInfo) {
     return axios({
         url: 'moments',
@@ -72,23 +62,4 @@ export function deleteMomentById(id) {
     })
 }
 
-export function saveMoment(moment) {
-    return axios({
-        url: 'moment',
-        method: 'POST',
-        data: {
-            ...moment
-        }
-    })
-}
 
-export function updateMoment(moment) {
-    return axios({
-        url: 'moment',
-        method: 'PUT',
-        data: {
-            ...moment
-        }
-    })
->>>>>>> 0ad638ffd0fef0b1ccd287e35628ac8b2399dc82
-}
