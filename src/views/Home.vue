@@ -66,6 +66,11 @@
 								path: '/blogs/write'
 							},
 							{
+								id: 12,
+								title: '写动态',
+								path: '/moments/write'
+							},
+							{
 								id: 13,
 								title: '文章管理',
 								path: '/blogs'

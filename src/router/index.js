@@ -5,6 +5,7 @@ import Login from "@/views/Login";
 import Home from "@/views/Home";
 import Dashboard from "@/views/dashboard/Dashboard";
 import WriteBlog from "@/views/blog/blog/WriteBlog";
+import WriteMoment from "@/views/blog/moment/WriteMoment";
 import BlogList from "@/views/blog/blog/BlogList";
 import CommentList from "@/views/blog/comment/CommentList";
 import CategoryList from "@/views/blog/category/CategoryList";
@@ -58,6 +59,13 @@ const routes = [
 				component: WriteBlog,
 				meta: {
 					title: '编辑文章'
+				}
+			},
+			{
+				path: '/moments/write',
+				component: WriteMoment,
+				meta: {
+					title: '写动态'
 				}
 			},
 			{
