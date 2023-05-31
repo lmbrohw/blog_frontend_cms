@@ -7,12 +7,20 @@ import Dashboard from "@/views/dashboard/Dashboard";
 import WriteBlog from "@/views/blog/blog/WriteBlog";
 import WriteMoment from "@/views/blog/moment/WriteMoment";
 import BlogList from "@/views/blog/blog/BlogList";
+import SiteSetting from "@/views/page/SiteSetting";
 import CommentList from "@/views/blog/comment/CommentList";
 import CategoryList from "@/views/blog/category/CategoryList";
 import TagList from "@/views/blog/tag/TagList";
 import Visitor from "@/views/statistics/Visitor";
 import Register from "@/views/Register";
 import {SAVE_NAV_STATE} from "@/store/mutations-types";
+import MomentList from "@/views/blog/moment/MomentList.vue";
+import WriteMoment from "@/views/blog/moment/WriteMoment.vue";
+import JobLog from "@/views/log/ScheduleJobLog";
+import OperationLog from "@/views/log/OperationLog";
+import LoginLog from "@/views/log/LoginLog";
+import ExceptionLog from "@/views/log/ExceptionLog";
+import VisitLog from "@/views/log/VisitLog";
 
 Vue.use(VueRouter)
 
@@ -69,10 +77,27 @@ const routes = [
 				}
 			},
 			{
+<<<<<<< HEAD
+=======
+				path: '/moments/edit/:id',
+				component: WriteMoment,
+				meta: {
+					title: '编辑动态'
+				}
+			},
+			{
+>>>>>>> 0ad638ffd0fef0b1ccd287e35628ac8b2399dc82
 				path: '/blogs',
 				component: BlogList,
 				meta: {
 					title: '文章管理'
+				}
+			},
+			{
+				path: '/moments',
+				component: MomentList,
+				meta: {
+					title: '动态管理'
 				}
 			},
 			{
@@ -101,6 +126,48 @@ const routes = [
 				component: Visitor,
 				meta: {
 					title: '访客统计'
+				}
+			},
+            {
+                path: '/siteSettings',
+                component: SiteSetting,
+                meta: {
+                    title: '站点管理'
+                }
+            },
+			{
+				path: '/jobs/logs',
+				component: JobLog,
+				meta: {
+					title: '任务日志'
+				}
+			},
+			{
+				path: '/operationLog',
+				component: OperationLog,
+				meta: {
+					title: '操作日志'
+				}
+			},
+			{
+				path: '/loginLog',
+				component: LoginLog,
+				meta: {
+					title: '登录日志'
+				}
+			},
+			{
+				path: '/exceptionLog',
+				component: ExceptionLog,
+				meta: {
+					title: '异常日志'
+				}
+			},
+			{
+				path: '/visitLog',
+				component: VisitLog,
+				meta: {
+					title: '访问日志'
 				}
 			},
 		]
