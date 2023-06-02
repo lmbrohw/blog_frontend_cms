@@ -8,6 +8,7 @@ import WriteBlog from "@/views/blog/blog/WriteBlog";
 import WriteMoment from "@/views/blog/moment/WriteMoment";
 import BlogList from "@/views/blog/blog/BlogList";
 import SiteSetting from "@/views/page/SiteSetting";
+import About from "@/views/page/About.vue";
 import CommentList from "@/views/blog/comment/CommentList";
 import CategoryList from "@/views/blog/category/CategoryList";
 import TagList from "@/views/blog/tag/TagList";
@@ -129,6 +130,13 @@ const routes = [
                 component: SiteSetting,
                 meta: {
                     title: '站点管理'
+                }
+            },
+            {
+                path: '/About',
+                component: About,
+                meta: {
+                    title: '关于我'
                 }
             },
 			{

@@ -106,6 +106,11 @@
                                 title: '站点设置',
                                 path: '/siteSettings'
                             },
+                            {
+                                id: 23,
+                                title: '关于我',
+                                path: '/about'
+                            },
                         ]
                     },
 					{
